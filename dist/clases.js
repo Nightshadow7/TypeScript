@@ -64,14 +64,17 @@ const niveles = [
     new Nivel("Nivel 6"),
     new Nivel("Nivel 7")
 ];
+function generatePuesto() {
+    return Boolean((Math.floor(Math.random() * 2)) - 1);
+}
 const campers = [
-    new Camper("Camper 1", true),
-    new Camper("Camper 2", false),
-    new Camper("Camper 3", true),
-    new Camper("Camper 4", false),
-    new Camper("Camper 5", true),
-    new Camper("Camper 6", false),
-    new Camper("Camper 7", true)
+    new Camper("Camper 1", generatePuesto()),
+    new Camper("Camper 2", generatePuesto()),
+    new Camper("Camper 3", generatePuesto()),
+    new Camper("Camper 4", generatePuesto()),
+    new Camper("Camper 5", generatePuesto()),
+    new Camper("Camper 6", generatePuesto()),
+    new Camper("Camper 7", generatePuesto())
 ];
 const contratos = [];
 // Gestionar contrataciones
